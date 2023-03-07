@@ -93,10 +93,13 @@ export const Employees = () => {
     },
   ]);
 
-  function handleTeamSelectionChange(event) {
+  const handleTeamSelectionChange = (event) => {
     console.log(event.target.value);
     setTeam(event.target.value);
   }
+const handleEmployeeCardClick = (event) => {
+  
+}
 
   return (
     <main className="container">
