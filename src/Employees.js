@@ -98,7 +98,7 @@ export const Employees = () => {
     setTeam(event.target.value);
   }
 const handleEmployeeCardClick = (event) => {
-  
+  const transformedEmployees = employees.map((employee) => employee.id === event.currentTarget.id) 
 }
 
   return (
