@@ -1,8 +1,13 @@
 
 import femaleProfile from "./images/femaleProfile.jpg";
 import maleProfile from "./images/maleProfile.jpg";
+import { useState } from "react";
 
-export const Employees = () => {
+export const Employees = ({employees, selectedTeam, handleEmployeeCardClick, handleTeamSelectionChange}) => {
+
+}
+
+   
   
 
   return (
@@ -33,7 +38,7 @@ export const Employees = () => {
                     ? "card m-2 standout"
                     : "card m-2"
                 }
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer" }} onClick={handleEmployeeCardClick}
               >
                 {employee.gender === "male" ? (
                   <img
